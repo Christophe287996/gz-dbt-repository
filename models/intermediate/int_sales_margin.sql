@@ -6,4 +6,4 @@ Select
 FROM {{ref("stg_raw__sales")}}
 JOIN {{ref("stg_raw__product")}}
 USING (products_id)
-GROUP BY revenue
+GROUP BY revenue, orders_id, products_id
