@@ -1,10 +1,33 @@
- #schema.yml
+#schema.yml
 
- version: 2
+version: 2
 
- sources:
-   - name: gz_raw_data
-     tables:
-       - name: raw_gz_product
-       - name: raw_gz_sales
-       - name: raw_gz_ship
+sources:
+  - name: gz_raw_data
+    description : fdfhdfhfdd
+    
+    tables:
+      - name: product
+        identifier : raw_gz_product
+        description : blabla
+        columns : 
+         - name : products_id
+         - name : purchSE_PRICE
+      - name: sales
+        identifier : raw_gz_sales
+        description : blablabla
+        columns : 
+          - name : date_date
+          - name : orders_id
+          - name : pdt_id 
+          - name : revenue
+          - name :  quantity
+      - name: ship
+        identifier : raw_gz_ship
+        description: blablablabla
+        columns : 
+          - name : orders_id
+          - name : shipping_fee
+          - name : shipping_fee_1
+          - name : logCost
+          - name : ship_cost
